@@ -1,0 +1,2 @@
+# rynizx.xyz
+offical website
