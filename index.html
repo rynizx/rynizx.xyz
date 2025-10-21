@@ -349,8 +349,20 @@
     <style>
         #navigation2 a,
         #menu a {
-            display: inline;
+            display: inline-block;
             zoom: 1;
+            *display: inline;
+        }
+        
+        /* Fix for Cool Places buttons in IE8 */
+        #menu a {
+            display: block;
+            float: left;
+            clear: left;
+        }
+        
+        #menu a img {
+            vertical-align: middle;
         }
     </style>
     <![endif]-->
