@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | ryni's website!</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- prettty :3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Megrim|Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* === BASE STYLES === */
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #301934;
+            background-color: #301934;
+            font-family: 'lato', calibri, Verdana, Arial, Helvetica, sans-serif;
+            font-size: 9px;
+            text-shadow: 0px 0px 1px #000;
+            filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=0, Strength=1);
+            color: #D8BFD8;
+            letter-spacing: 1px;
+            line-height: 11px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* === LAYOUT === */
+        #layout {
+            margin: 80px auto;
+            width: 720px;
+        }
+
+        /* === HEADER === */
+        #header1 {
+            width: 720px;
+            float: left;
+            margin: 0 auto;
+        }
+
+        #header2 {
+            height: 40px;
+            background: transparent;
+            border-bottom: 1px solid #6a3a7a;
+            margin: 0;
+        }
+
+        #sitename a {
+            font: 30px 'pixelify sans', 'courier new', courier, monospace;
+            color: #D8BFD8;
+        }
+
+        /* === NAVIGATION === */
+        #navigation1 {
+            width: 720px;
+            float: left;
+            margin: 0 auto;
+        }
+
+        #navigation2 {
+            height: 20px;
+            line-height: 20px;
+            background: transparent;
+            margin: 0 0 10px 0;
+            padding: 1px;
+            padding-top: 0;
+            text-align: center;
+            -webkit-border-top-left-radius: 10px;
+            -webkit-border-top-right-radius: 10px;
+            -moz-border-radius-topleft: 10px;
+            -moz-border-radius-topright: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-top: 2px solid #301934;
+        }
+
+        #navigation2 a {
+            min-width: 80px;
+            display: inline-block;
+            /* IE7 fallback */
+            *display: inline;
+            *zoom: 1;
+            background: #6a3a7a;
+            background-color: #6a3a7a;
+            font: bold 9px 'lato', monospace, georgia;
+            text-transform: uppercase;
+            padding: 4px 6px;
+            letter-spacing: 2px;
+            color: #E6E6FA;
+            -webkit-border-bottom-left-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        #navigation2 a:hover {
+            background: #D8BFD8;
+            background-color: #D8BFD8;
+            color: #301934;
+        }
+
+        /* === content === */
+        #content1 {
+            width: 720px;
+            float: left;
+            margin: 0 auto;
+        }
+
+        #content2 {
+            margin: 0;
+            padding: 6px;
+        }
+
+        /* === feet :3 === */
+        #footer1 {
+            width: 720px;
+            float: left;
+            margin: 0 auto;
+            clear: both;
+        }
+
+        #footer2 {
+            height: 100px;
+            line-height: 40px;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* === BOX COMPONENTS === */
+        .box {
+            background: #4c2a54;
+            background-color: #4c2a54;
+            border: 1px solid #6a3a7a;
+            border-top: 0;
+            -webkit-box-shadow: 5px 6px #1a0e1c;
+            -moz-box-shadow: 5px 6px #1a0e1c;
+            box-shadow: 5px 6px #1a0e1c;
+            filter: progid:DXImageTransform.Microsoft.Shadow(color='#1a0e1c', Direction=135, Strength=8);
+            -webkit-border-bottom-left-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            -moz-border-radius-bottomright: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding: 8px;
+            margin-bottom: 2px;
+        }
+
+        .title {
+            font: 10px monospace, courier, 'courier new';
+            text-transform: uppercase;
+            color: #E6E6FA;
+            background: #6a3a7a;
+            background-color: #6a3a7a;
+            letter-spacing: 3px;
+            text-align: left;
+            padding: 2px 2px 2px 8px;
+            padding-top: 4px;
+            margin-bottom: 0;
+            -webkit-border-top-left-radius: 5px;
+            -webkit-border-top-right-radius: 5px;
+            -moz-border-radius-topleft: 5px;
+            -moz-border-radius-topright: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        /* === 404 specific styles === */
+        .error-code {
+            font: bold 80px 'pixelify sans', 'courier new', courier, monospace;
+            color: #D8BFD8;
+            text-align: center;
+            margin: 20px 0 10px 0;
+            text-shadow: 3px 3px #1a0e1c;
+        }
+
+        .error-message {
+            font: 20px 'pixelify sans', 'courier new', courier, monospace;
+            color: #c3a9d4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .home-button {
+            display: block;
+            background: #6a3a7a;
+            background-color: #6a3a7a;
+            margin: 20px auto;
+            padding: 10px 20px;
+            width: 200px;
+            line-height: 18px;
+            font: bold 14px 'lato', monospace, georgia;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            color: #E6E6FA;
+            text-decoration: none;
+        }
+
+        .home-button:hover {
+            background: #D8BFD8;
+            background-color: #D8BFD8;
+            color: #301934;
+        }
+
+        /* === pretty as well === */
+        a:link, a:visited, a:active {
+            color: #c3a9d4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FFFFFF;
+        }
+
+        /* === formats for text ;P === */
+        b {
+            color: #E6E6FA;
+            font-weight: bold;
+        }
+
+        i {
+            font-style: italic;
+            color: #b092b8;
+        }
+
+        u {
+            color: #9370DB;
+            text-decoration: none;
+        }
+
+        /* === SCROLLBAR === */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 0;
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #6a3a7a;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            border: 0 solid #ccc;
+        }
+
+        /* === IE FIXES === */
+        img {
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+        
+        /* Clear floats for older browsers */
+        .clearfix:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        * html .clearfix {
+            height: 1%;
+        }
+        
+        .clearfix {
+            display: block;
+        }
+    </style>
+    
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div id="layout">
+        <!-- Header -->
+        <div id="header1">
+            <div id="header2">
+                <div id="sitename">
+                    <center>
+                        <img src="https://64.media.tumblr.com/201c6b41a0c618b41f91a401d6a1e40e/b9e277d625cab2f2-87/s75x75_c1/696b4b19d4b0e71fafd7465e093279d0cfd360a5.gifv" alt="star">
+                        <a href="index.html">ryni's site!</a>
+                        <img src="https://64.media.tumblr.com/201c6b41a0c618b41f91a401d6a1e40e/b9e277d625cab2f2-87/s75x75_c1/696b4b19d4b0e71fafd7465e093279d0cfd360a5.gifv" alt="star">
+                        <img src="https://64.media.tumblr.com/b21deb3df357742446113bafac959eb1/b9e277d625cab2f2-a1/s75x75_c1/c9236568d5c458271a9e9fba35d1318b03acca88.gifv" alt="star">
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div id="navigation1">
+            <div id="navigation2">
+                <a href="index.html">home</a>
+                <a href="https://www.fort1nd.com/">fort.ind</a>
+                <a href="https://github.com/rynizx">github</a>
+                <a href="guestbook.html">guestbook</a>
+                <a href="https://steamcommunity.com/id/rynizx/">steam</a>
+                <a href="https://discord.gg/NhYaaPFTYr">discord</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="content1">
+            <div id="content2">
+                <div class="error-code">404</div>
+                <div class="error-message">oops! page not found :(</div>
+                
+                <div class="title">uh oh...</div>
+                <div class="box">
+                    <center>
+                        looks like you've wandered into the void! the page you're looking for doesn't exist anymore... or maybe it never did? 👀
+                        <br><br>
+                        <i>maybe you mistyped the URL? or perhaps this page went on vacation without telling anyone...</i>
+                        <br><br>
+                        don't worry though! you can head back home and explore all the cool stuff that actually exists :D
+                        <br><br>
+                        <img src="https://64.media.tumblr.com/201c6b41a0c618b41f91a401d6a1e40e/b9e277d625cab2f2-87/s75x75_c1/696b4b19d4b0e71fafd7465e093279d0cfd360a5.gifv" alt="star">
+                        <img src="https://64.media.tumblr.com/b21deb3df357742446113bafac959eb1/b9e277d625cab2f2-a1/s75x75_c1/c9236568d5c458271a9e9fba35d1318b03acca88.gifv" alt="star">
+                    </center>
+                </div>
+
+                <a href="index.html" class="home-button">← back to home</a>
+
+                <br>
+
+                <div class="title">while you're here...</div>
+                <div class="box">
+                    <center>
+                        here are some cool places you can check out instead:
+                        <br><br>
+                        <b>★</b> <a href="https://www.fort1nd.com/">fort.ind - awesome games collection!</a><br>
+                        <b>★</b> <a href="guestbook.html">sign the guestbook!</a><br>
+                        <b>★</b> <a href="https://discord.gg/NhYaaPFTYr">join the discord server!</a><br>
+                        <b>★</b> <a href="https://crosstalk.im">check out crosstalk.im!</a><br>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer1">
+            <div id="footer2">
+                <b style="font-size: 13px;">made with love by ryni! ✦</b><br>
+                <img src="zxs3 (3).gif" alt="a computer and a monitor">
+                <img src="got_html.gif" alt="got html?!">
+                <img src="vscbutton.gif" alt="visual studio code">
+                <img src="bestvieweddesktop.gif" alt="use a pc damit">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
